@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/baner git" width="100%" alt="Data engineering visual banner">
+<img src="./assets/baner git.png" width="100%" alt="Data engineering visual banner">
 
 <br><br>
 
