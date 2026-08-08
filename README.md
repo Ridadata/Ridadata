@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/herobaner" width="100%" alt="Rida Aderkane — Data Engineering, AI, Systems & Infrastructure">
+<img src="./assets/herobaner.png" width="100%" alt="Rida Aderkane — Data Engineering, AI, Systems & Infrastructure">
 
 <br>
 
