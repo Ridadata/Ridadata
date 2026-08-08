@@ -1,45 +1,39 @@
 <div align="center">
 
-<img src="./assets/baner.png" width="100%" alt="Data engineering visual banner">
+<img src="./assets/herobaner" width="100%" alt="Rida Aderkane — Data Engineering, AI, Systems & Infrastructure">
 
-<br><br>
-
-# RIDA ADERKANE
+<br>
 
 ### DATA ENGINEERING · AI · DISTRIBUTED SYSTEMS
 
-Building reliable systems around **data, AI, and infrastructure.**
+Building reliable systems around data, AI, and infrastructure.
 
 <br>
 
 <a href="https://github.com/Ridadata">GitHub</a>
-  ·   <a href="https://www.linkedin.com/">LinkedIn</a>
+&nbsp;·&nbsp;
+<a href="https://www.linkedin.com/">LinkedIn</a>
 
 </div>
-
-<br>
 
 ---
 
 ## 01 / SELECTED WORK
 
-<br>
+<div align="center">
 
 <table>
 <tr>
+
 <td width="50%" valign="top">
 
 ### MCP Data Profiler
 
-MCP server that gives AI agents a compact, structured understanding of datasets without exposing raw rows.
-
-<br>
+MCP server for dataset intelligence and AI-assisted data exploration.
 
 `Python` · `MCP` · `Pandas` · `PyArrow`
 
-<br><br>
-
-<a href="https://github.com/Ridadata/mcp-data-profiler">VIEW PROJECT →</a>
+**[VIEW PROJECT →](https://github.com/Ridadata/mcp-data-profiler)**
 
 </td>
 
@@ -47,33 +41,27 @@ MCP server that gives AI agents a compact, structured understanding of datasets 
 
 ### StreamMart
 
-Real-time e-commerce analytics platform built around streaming, data lake storage, orchestration, and observability.
+Real-time e-commerce analytics platform.
 
-<br>
+`Kafka` · `Spark` · `MinIO` · `Airflow`
 
-`Kafka` · `Spark` · `MinIO` · `Airflow` · `Grafana`
-
-<br><br>
-
-<a href="https://github.com/Ridadata/streammart">VIEW PROJECT →</a>
+**[VIEW PROJECT →](https://github.com/Ridadata/streammart)**
 
 </td>
+
 </tr>
 
 <tr>
+
 <td width="50%" valign="top">
 
 ### WhatBreaks
 
-Developer tooling for understanding column-level impact and potential blast radius in dbt projects.
-
-<br>
+Column-level impact analysis for dbt projects.
 
 `Python` · `SQLGlot` · `dbt` · `CI`
 
-<br><br>
-
-<a href="https://github.com/Ridadata/whatbreaks">VIEW PROJECT →</a>
+**[VIEW PROJECT →](https://github.com/Ridadata/whatbreaks)**
 
 </td>
 
@@ -81,102 +69,62 @@ Developer tooling for understanding column-level impact and potential blast radi
 
 ### Job Intelligent
 
-End-to-end platform for collecting, processing, enriching, and analyzing job-market data.
+End-to-end job-market data platform.
 
-<br>
+`Python` · `Scrapy` · `Airflow` · `PostgreSQL`
 
-`Python` · `Scrapy` · `Airflow` · `PostgreSQL` · `NLP`
-
-<br><br>
-
-<a href="https://github.com/Ridadata/job-intelligent">VIEW PROJECT →</a>
+**[VIEW PROJECT →](https://github.com/Ridadata/job-intelligent)**
 
 </td>
+
 </tr>
 </table>
 
-<br>
+</div>
 
 ---
 
-## 02 / ENGINEERING STACK
-
-<br>
+## 02 / TECH STACK
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,postgres,docker,linux,git,github,kafka,spark,airflow&perline=9" alt="Engineering stack">
+<img src="https://skillicons.dev/icons?i=python,postgres,docker,linux,git,github,kafka,spark,airflow&perline=9">
 
 <br><br>
 
-<img src="https://skillicons.dev/icons?i=redis,grafana,prometheus,fastapi,pytorch,bash&perline=9" alt="Additional technologies">
+<img src="https://skillicons.dev/icons?i=redis,grafana,prometheus,fastapi,bash&perline=9">
 
 </div>
 
-<br>
-
-| Area                 | Technologies                            |
-| :------------------- | :-------------------------------------- |
-| **Languages**        | Python · SQL · Bash                     |
-| **Data Engineering** | Kafka · Spark · Airflow · Dagster · dbt |
-| **Data Platforms**   | PostgreSQL · MinIO · Iceberg · Redis    |
-| **AI / ML**          | MCP · RAG · NLP · Vector Search         |
-| **Infrastructure**   | Docker · Linux · GitHub Actions         |
-| **Observability**    | Grafana · Prometheus · OpenTelemetry    |
-
-<br>
-
 ---
 
-## 03 / ENGINEERING PRINCIPLES
+## 03 / ENGINEERING
 
-<br>
-
-**Reliability**
-Systems should fail predictably and expose their state.
-
-**Reproducibility**
-Data pipelines should be testable, observable, and repeatable.
-
-**Simplicity**
-Complex systems should remain understandable.
-
-**Evidence**
-Benchmarks, tests, and measurable results matter more than claims.
-
-<br>
+| | |
+|---|---|
+| **Languages** | Python · SQL · Bash |
+| **Data** | Kafka · Spark · Dagster · Airflow · dbt |
+| **Storage** | PostgreSQL · MinIO · Iceberg · Redis |
+| **AI** | MCP · RAG · NLP · Vector Search |
+| **Infrastructure** | Docker · Linux · GitHub Actions |
+| **Observability** | Grafana · Prometheus · OpenTelemetry |
 
 ---
 
 ## 04 / OPEN SOURCE
 
-<br>
+Building practical developer tools and data infrastructure.
 
-I build practical developer tools and data infrastructure, while contributing to open-source systems and exploring the intersection of **data engineering and AI infrastructure**.
+Interested in **reliable systems, open source, and the intersection of Data Engineering and AI.**
 
 <br>
 
 <div align="center">
 
-`BUILD`   `MEASURE`   `IMPROVE`
-
-</div>
-
-<br>
-
----
-
-<div align="center">
-
-### RIDA / DATA
-
-<br>
-
-<a href="https://github.com/Ridadata">GitHub</a>
-  ·   <a href="https://www.linkedin.com/">LinkedIn</a>
+`BUILD` · `MEASURE` · `IMPROVE`
 
 <br><br>
 
-<sub>Data Engineering · AI · Distributed Systems</sub>
+**RIDA / DATA**
 
 </div>
