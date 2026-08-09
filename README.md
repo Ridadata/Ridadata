@@ -2,182 +2,192 @@
 
 <img src="./assets/herobaner.png" width="100%" alt="Rida Aderkane — Data Engineering, AI, Systems & Infrastructure">
 
-<br><br>
+<br>
 
-**Most data tooling assumes the pipeline is correct and the data is clean.**
-
-**I build the checks that assume neither.**
+<a href="https://github.com/Ridadata">
+  <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=21&duration=3200&pause=900&color=00AEEF&center=true&vCenter=true&width=780&height=42&lines=Data+Engineer+%26+AI+Engineer;Streaming+pipelines+%C2%B7+Lakehouses+%C2%B7+RAG+systems;Python+%C2%B7+Kafka+%C2%B7+Spark+%C2%B7+Airflow+%C2%B7+dbt" alt="Data Engineer & AI Engineer">
+</a>
 
 <br>
 
-<a href="https://github.com/Ridadata">GitHub</a>
-&nbsp;·&nbsp;
-<a href="https://pypi.org/project/mcp-data-profiler/">PyPI</a>
+<a href="https://www.linkedin.com/in/rida-aderkane"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logoColor=white" alt="LinkedIn"></a>
+<a href="https://github.com/Ridadata"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+<a href="https://pypi.org/project/mcp-data-profiler/"><img src="https://img.shields.io/pypi/v/mcp-data-profiler?style=for-the-badge&logo=pypi&logoColor=white&label=PyPI&color=00AEEF" alt="PyPI"></a>
 
 </div>
 
----
+<br>
 
-## 01 / THE THROUGH-LINE
+I build **data platforms end to end** — streaming ingestion, distributed processing, orchestration,
+and the AI layer on top. Most of my work lives at the point where **data engineering meets applied AI**:
+real-time pipelines feeding analytics, and retrieval systems that make that data useful to people and agents.
 
-Four projects, one idea: **every stage of a data platform should be able to prove it still works.**
-Each tool below hardens a different stage — and each one exists because the failure it catches is
-invisible until production.
+Everything below is a system I designed, built, and ran — not a tutorial follow-along.
 
-```mermaid
-flowchart LR
-    subgraph S1["1 · INGEST"]
-        direction TB
-        A["Streaming<br/>sources"] -.- SM["StreamMart<br/>36 tests · 9 bugs<br/>found in live validation"]
-    end
+<br>
 
-    subgraph S2["2 · TRANSFORM"]
-        direction TB
-        B["Transform<br/>layer"] -.- WB["WhatBreaks<br/>column blast radius<br/>before merge"]
-    end
-
-    subgraph S3["3 · DATASETS"]
-        direction TB
-        C["Datasets"] -.- MP["MCP Data Profiler<br/>645 MB → 13 KB<br/>6 quality flags"]
-    end
-
-    subgraph S4["4 · CONSUME"]
-        direction TB
-        D["Docs &<br/>agents"] -.- DD["Doc Doctor<br/>runs your README<br/>fails the PR"]
-    end
-
-    S1 --> S2 --> S3 --> S4
-
-    classDef stage fill:#f2f4f6,stroke:#9aa4ad,stroke-width:1px,color:#1f2328
-    classDef tool fill:#e6f7fd,stroke:#00aeef,stroke-width:1.5px,color:#0b3a52
-    classDef phase fill:#ffffff,stroke:#d0d7de,stroke-width:1px,color:#57606a
-    class A,B,C,D stage
-    class SM,WB,MP,DD tool
-    class S1,S2,S3,S4 phase
-```
-
----
-
-## 02 / SELECTED WORK
-
-<div align="center">
+## Featured Projects
 
 <table>
 <tr>
 
 <td width="50%" valign="top">
-
-### MCP Data Profiler
-
-Lets an AI agent understand a dataset **without reading it** — a bounded JSON profile instead of pasted rows.
-
-**645 MB → 13 KB.** 6 data-quality flags. CSV, Parquet, JSON, Excel.
-
-`Python` · `MCP` · `pandas` · `PyArrow`
-
-**[VIEW PROJECT →](https://github.com/Ridadata/mcp-data-profiler)** · `pip install mcp-data-profiler`
-
+<a href="https://github.com/Ridadata/streammart"><img src="./assets/projects/streammart.png" width="100%" alt="StreamMart Grafana dashboard"></a>
+<h3>StreamMart</h3>
+<p>Real-time e-commerce analytics on a lambda architecture. Kafka feeds four independent Spark Structured Streaming jobs into PostgreSQL and a MinIO data lake, reconciled nightly by Airflow.</p>
+<p><b>27 Docker services · 36 automated tests · 9 bugs caught in live validation</b></p>
+<p>
+<img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white">
+<img src="https://img.shields.io/badge/Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white">
+<img src="https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white">
+<img src="https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white">
+<img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white">
+</p>
+<a href="https://github.com/Ridadata/streammart"><b>View repository →</b></a>
 </td>
 
 <td width="50%" valign="top">
-
-### WhatBreaks
-
-Static breaking-change analysis for dbt. Column-level blast radius in CI — **no warehouse, no credentials.**
-
-Benchmarked on 7 public dbt projects: **75.6%** exact column resolution, **zero** false positives.
-
-`Python` · `SQLGlot` · `dbt` · `CI`
-
-**[VIEW PROJECT →](https://github.com/Ridadata/whatbreaks)**
-
+<a href="https://github.com/Ridadata/job-intelligent"><img src="./assets/projects/job-intelligent.png" width="100%" alt="Job Intelligent recommendation dashboard"></a>
+<h3>Job Intelligent</h3>
+<p>End-to-end recruitment intelligence platform. Aggregates job offers via APIs and scrapers, extracts skills from CVs with NLP, and ranks candidate matches using embedding similarity.</p>
+<p><b>Medallion architecture · Airflow DAGs · FastAPI + Power BI surface</b></p>
+<p>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/Scrapy-60A839?style=flat-square&logo=scrapy&logoColor=white">
+<img src="https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white">
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white">
+<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white">
+</p>
+<a href="https://github.com/Ridadata/job-intelligent"><b>View repository →</b></a>
 </td>
 
 </tr>
-
 <tr>
 
 <td width="50%" valign="top">
-
-### StreamMart
-
-Real-time e-commerce analytics on a lambda architecture. Built for **operational durability, not syntax demos.**
-
-27 Docker services, 36 automated tests, and a multi-hour live validation that surfaced **9 bugs code review missed.**
-
-`Kafka` · `Spark` · `MinIO` · `Airflow`
-
-**[VIEW PROJECT →](https://github.com/Ridadata/streammart)**
-
+<a href="https://github.com/Ridadata/enterprise-rag-assistant"><img src="./assets/projects/enterprise-rag.png" width="100%" alt="Enterprise RAG Assistant search interface"></a>
+<h3>Enterprise RAG Assistant</h3>
+<p>Retrieval-augmented search over an enterprise knowledge base. Returns grounded answers with inline citations, plus a knowledge-base manager and admin analytics for retrieval quality.</p>
+<p><b>Cited answers · hybrid retrieval · admin analytics</b></p>
+<p>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/RAG-00AEEF?style=flat-square&logoColor=white">
+<img src="https://img.shields.io/badge/Vector%20Search-4B32C3?style=flat-square&logo=elasticsearch&logoColor=white">
+<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
+</p>
+<a href="https://github.com/Ridadata/enterprise-rag-assistant"><b>View repository →</b></a>
 </td>
 
 <td width="50%" valign="top">
-
-### Doc Doctor
-
-A GitHub Action that **executes the code examples in your docs** and fails the PR when they break.
-
-Tag a fenced block `verify`. Node, Python, and Bash — zero extra setup on GitHub runners.
-
-`TypeScript` · `GitHub Actions`
-
-**[VIEW PROJECT →](https://github.com/Ridadata/doc-doctor)**
-
+<a href="https://github.com/Ridadata/mcp-data-profiler"><img src="./assets/projects/mcp-data-profiler.gif" width="100%" alt="MCP Data Profiler live demo"></a>
+<h3>MCP Data Profiler</h3>
+<p>An MCP server that lets AI agents understand a dataset without reading it. Returns a bounded JSON profile — types, ranges, null rates, quality flags — instead of pasted rows.</p>
+<p><b>Published on PyPI · 645 MB → 13 KB profile · CSV, Parquet, JSON, Excel</b></p>
+<p>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/MCP-000000?style=flat-square&logo=anthropic&logoColor=white">
+<img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white">
+<img src="https://img.shields.io/badge/PyArrow-FF6F00?style=flat-square&logo=apachearrow&logoColor=white">
+</p>
+<a href="https://github.com/Ridadata/mcp-data-profiler"><b>View repository →</b></a>
 </td>
 
 </tr>
 </table>
 
-</div>
+<br>
 
----
+## Also Building
 
-## 03 / ALSO SHIPPED
-
-| Project | What it does | Stack |
-|---|---|---|
-| **[Job Intelligent](https://github.com/Ridadata/job-intelligent)** | Recruitment intelligence platform — aggregates offers, extracts skills from CVs with NLP, ranks matches by embedding similarity | `Python` · `Scrapy` · `Airflow` · `PostgreSQL` |
-| **[Enterprise RAG Assistant](https://github.com/Ridadata/enterprise-rag-assistant)** | Document search and grounded answers over internal corpora | `Python` · `RAG` · `Vector Search` |
-| **[Procurement Pipeline](https://github.com/Ridadata/procurement-pipeline)** | Big-data procurement pipeline on a Hadoop/Presto stack | `Hadoop` · `Presto` · `Airflow` |
-
----
-
-## 04 / STACK
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=python,postgres,kafka,spark,airflow,docker,linux,redis,grafana&perline=9">
-
-<br><br>
-
-<img src="https://skillicons.dev/icons?i=prometheus,fastapi,typescript,bash,git,github&perline=9">
-
-</div>
+<table>
+<tr>
+<td width="34%" valign="top">
+<b><a href="https://github.com/Ridadata/whatbreaks">WhatBreaks</a></b><br>
+Static breaking-change analysis for dbt. Column-level blast radius in CI, with no warehouse or credentials required.<br><br>
+<code>Python</code> <code>SQLGlot</code> <code>dbt</code>
+</td>
+<td width="33%" valign="top">
+<b><a href="https://github.com/Ridadata/doc-doctor">Doc Doctor</a></b><br>
+A GitHub Action that executes the code examples in your docs and fails the PR when they break.<br><br>
+<code>TypeScript</code> <code>GitHub Actions</code>
+</td>
+<td width="33%" valign="top">
+<b><a href="https://github.com/Ridadata/procurement-pipeline">Procurement Pipeline</a></b><br>
+Big-data procurement analytics pipeline built on a Hadoop and Presto stack, orchestrated with Airflow.<br><br>
+<code>Hadoop</code> <code>Presto</code> <code>Airflow</code>
+</td>
+</tr>
+</table>
 
 <br>
 
-Beyond the icons — the parts of the stack that do the real work:
+## Tech Stack
 
-| | |
-|---|---|
-| **Data** | dbt · Dagster · Iceberg · SQLGlot · Structured Streaming |
-| **AI** | MCP · RAG · NLP · Vector Search · Embeddings |
-| **Reliability** | OpenTelemetry · idempotent writes · bounded-state watermarks · CI gates |
-
----
-
-## 05 / NOW
-
-Currently building **[WhatBreaks](https://github.com/Ridadata/whatbreaks)** — pushing column-lineage
-resolution past 75.6% and expanding the rule set beyond the first four.
-
-Interested in **reliable data systems, developer tooling, and the point where Data Engineering meets AI.**
-Open to collaboration on any of the above.
-
-<div align="center">
+<table>
+<tr>
+<td valign="middle"><b>Languages</b></td>
+<td>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white">
+<img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white">
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+</td>
+</tr>
+<tr>
+<td valign="middle"><b>Data Engineering</b></td>
+<td>
+<img src="https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white">
+<img src="https://img.shields.io/badge/Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white">
+<img src="https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white">
+<img src="https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logoColor=white">
+<img src="https://img.shields.io/badge/Dagster-654FF0?style=for-the-badge&logoColor=white">
+<img src="https://img.shields.io/badge/Hadoop-66CCFF?style=for-the-badge&logo=apachehadoop&logoColor=black">
+</td>
+</tr>
+<tr>
+<td valign="middle"><b>AI &amp; ML</b></td>
+<td>
+<img src="https://img.shields.io/badge/RAG-00AEEF?style=for-the-badge&logoColor=white">
+<img src="https://img.shields.io/badge/MCP-000000?style=for-the-badge&logo=anthropic&logoColor=white">
+<img src="https://img.shields.io/badge/NLP-8A2BE2?style=for-the-badge&logo=spacy&logoColor=white">
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white">
+<img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
+</td>
+</tr>
+<tr>
+<td valign="middle"><b>Storage</b></td>
+<td>
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white">
+<img src="https://img.shields.io/badge/MinIO-C72E49?style=for-the-badge&logo=minio&logoColor=white">
+<img src="https://img.shields.io/badge/Apache%20Iceberg-1E90FF?style=for-the-badge&logoColor=white">
+<img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white">
+</td>
+</tr>
+<tr>
+<td valign="middle"><b>Infrastructure</b></td>
+<td>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white">
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white">
+</td>
+</tr>
+<tr>
+<td valign="middle"><b>Observability</b></td>
+<td>
+<img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white">
+<img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white">
+<img src="https://img.shields.io/badge/OpenTelemetry-000000?style=for-the-badge&logo=opentelemetry&logoColor=white">
+</td>
+</tr>
+</table>
 
 <br>
 
-**RIDA ADERKANE**
+## Contribution Activity
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Ridadata&custom_title=Commit%20activity%20over%20the%20last%2060%20days&bg_color=00000000&color=8b949e&title_color=00AEEF&line=00AEEF&point=00AEEF&area=true&area_color=00AEEF&hide_border=true&radius=6&days=60" width="100%" alt="Contribution activity graph">
 
 </div>
