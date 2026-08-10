@@ -185,8 +185,6 @@ Big-data procurement analytics pipeline built on a Hadoop and Presto stack, orch
 </tr>
 </table>
 
-<br>
-
 ## Contribution Activity
 
 <div align="center">
