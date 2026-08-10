@@ -1,6 +1,13 @@
 <div align="center">
 
 <img src="./assets/herobaner.png" width="100%" alt="Rida Aderkane — Data Engineering, AI, Systems & Infrastructure">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00AEEF&height=60&section=header" width="100%" alt="Cyan wave divider closing the hero banner">
+
+<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="46" alt="Animated code symbol">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="46" alt="Animated code symbol">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="46" alt="Animated code symbol">
 
 <br>
 
