@@ -1,29 +1,21 @@
 <div align="center">
 
-<img src="./assets/herobaner.png" width="100%" alt="Rida Aderkane — Data Engineering, AI, Systems & Infrastructure">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00AEEF&height=60&section=header" width="100%" alt="Cyan wave divider closing the hero banner">
+<img src="./assets/herobaner.png" width="100%" alt="Rida Aderkane — Data Engineering, AI, Systems & Infrastructure"><img src="https://capsule-render.vercel.app/api?type=waving&color=00AEEF&height=140&section=header" width="100%" alt="Cyan wave flowing out of the hero banner">
 
-<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="46" alt="Animated code symbol">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="46" alt="Animated code symbol">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="46" alt="Animated code symbol">
-
-<br>
+<h1>Rida Aderkane</h1>
 
 <a href="https://github.com/Ridadata">
-  <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=21&duration=3200&pause=900&color=00AEEF&center=true&vCenter=true&width=780&height=42&lines=Data+Engineer+%26+AI+Engineer;Streaming+pipelines+%C2%B7+Lakehouses+%C2%B7+RAG+systems;Python+%C2%B7+Kafka+%C2%B7+Spark+%C2%B7+Airflow+%C2%B7+dbt" alt="Data Engineer & AI Engineer">
+  <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=00AEEF&center=true&vCenter=true&width=520&height=44&lines=Data+%26+AI+Engineer" alt="Data & AI Engineer">
 </a>
 
 <br>
 
 <a href="https://www.linkedin.com/in/rida-aderkane"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logoColor=white" alt="LinkedIn"></a>
+<a href="mailto:aderkane.rida@gmail.com"><img src="https://img.shields.io/badge/aderkane.rida@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email aderkane.rida@gmail.com"></a>
 <a href="https://github.com/Ridadata"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
 <a href="https://pypi.org/project/mcp-data-profiler/"><img src="https://img.shields.io/pypi/v/mcp-data-profiler?style=for-the-badge&logo=pypi&logoColor=white&label=PyPI&color=00AEEF" alt="PyPI"></a>
 
 </div>
-
-<br>
 
 I build **data platforms end to end** — streaming ingestion, distributed processing, orchestration,
 and the AI layer on top. Most of my work lives at the point where **data engineering meets applied AI**:
@@ -31,7 +23,15 @@ real-time pipelines feeding analytics, and retrieval systems that make that data
 
 Everything below is a system I designed, built, and ran — not a tutorial follow-along.
 
-<br>
+<div align="center">
+
+<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="42" alt="Animated code symbol">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="42" alt="Animated code symbol">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="42" alt="Animated code symbol">
+
+</div>
 
 ## Featured Projects
 
@@ -102,8 +102,6 @@ Everything below is a system I designed, built, and ran — not a tutorial follo
 </tr>
 </table>
 
-<br>
-
 ## Also Building
 
 <table>
@@ -125,8 +123,6 @@ Big-data procurement analytics pipeline built on a Hadoop and Presto stack, orch
 </td>
 </tr>
 </table>
-
-<br>
 
 ## Tech Stack
 
@@ -196,5 +192,7 @@ Big-data procurement analytics pipeline built on a Hadoop and Presto stack, orch
 <div align="center">
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ridadata&custom_title=Commit%20activity%20over%20the%20last%2060%20days&bg_color=00000000&color=8b949e&title_color=00AEEF&line=00AEEF&point=00AEEF&area=true&area_color=00AEEF&hide_border=true&radius=6&days=60" width="100%" alt="Contribution activity graph">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00AEEF&height=140&section=footer" width="100%" alt="Cyan wave closing the profile">
 
 </div>
