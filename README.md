@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/herobaner.png" width="100%" alt="Rida Aderkane — Data Engineering, AI, Systems & Infrastructure"><img src="https://capsule-render.vercel.app/api?type=waving&color=00AEEF&height=140&section=header" width="100%" alt="Cyan wave flowing out of the hero banner">
+<img src="./assets/herobaner.png" width="100%" alt="Rida Aderkane — Data Engineering, AI, Systems & Infrastructure"><img src="https://capsule-render.vercel.app/api?type=waving&color=00AEEF&height=100&section=header" width="100%" alt="Cyan wave flowing out of the hero banner">
 
 <h1>Rida Aderkane</h1>
 
@@ -191,6 +191,6 @@ Big-data procurement analytics pipeline built on a Hadoop and Presto stack, orch
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ridadata&custom_title=Commit%20activity%20over%20the%20last%2060%20days&bg_color=00000000&color=8b949e&title_color=00AEEF&line=00AEEF&point=00AEEF&area=true&area_color=00AEEF&hide_border=true&radius=6&days=60" width="100%" alt="Contribution activity graph">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00AEEF&height=140&section=footer" width="100%" alt="Cyan wave closing the profile">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00AEEF&height=100&section=footer" width="100%" alt="Cyan wave closing the profile">
 
 </div>
