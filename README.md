@@ -58,6 +58,7 @@ Everything below is a system I designed, built, and ran — not a tutorial follo
 <h3>Job Intelligent</h3>
 <p>End-to-end recruitment intelligence platform. Aggregates job offers via APIs and scrapers, extracts skills from CVs with NLP, and ranks candidate matches using embedding similarity.</p>
 <p><b>Medallion architecture · Airflow DAGs · FastAPI + Power BI surface</b></p>
+<p><sub>Built with <a href="https://github.com/mohamedamineelabidi">@mohamedamineelabidi</a></sub></p>
 <p>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
 <img src="https://img.shields.io/badge/Scrapy-60A839?style=flat-square&logo=scrapy&logoColor=white">
@@ -74,12 +75,12 @@ Everything below is a system I designed, built, and ran — not a tutorial follo
 <td width="50%" valign="top">
 <a href="https://github.com/Ridadata/enterprise-rag-assistant"><img src="./assets/projects/enterprise-rag.png" width="100%" alt="Enterprise RAG Assistant search interface"></a>
 <h3>Enterprise RAG Assistant</h3>
-<p>Retrieval-augmented search over an enterprise knowledge base. Returns grounded answers with inline citations, plus a knowledge-base manager and admin analytics for retrieval quality.</p>
-<p><b>Cited answers · hybrid retrieval · admin analytics</b></p>
+<p>Retrieval-augmented search over an enterprise knowledge base. Hybrid pgvector and full-text retrieval with cross-encoder reranking, answers grounded in inline citations, and an abstention path that says "I do not know" rather than guessing when nothing clears the score floor.</p>
+<p><b>recall@5 0.49 → 0.91 · measured on a 100-query eval harness</b></p>
 <p>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
 <img src="https://img.shields.io/badge/RAG-00AEEF?style=flat-square&logoColor=white">
-<img src="https://img.shields.io/badge/Vector%20Search-4B32C3?style=flat-square&logo=elasticsearch&logoColor=white">
+<img src="https://img.shields.io/badge/pgvector-4169E1?style=flat-square&logo=postgresql&logoColor=white">
 <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
 </p>
 <a href="https://github.com/Ridadata/enterprise-rag-assistant"><b>View repository →</b></a>
@@ -124,6 +125,12 @@ Big-data procurement analytics pipeline built on a Hadoop and Presto stack, orch
 </tr>
 </table>
 
+## Open Source Contributions
+
+- **[sktime/sktime#10733](https://github.com/sktime/sktime/pull/10733)** — `merged` — fixed mutable default arguments in the vendored LagLlama code, where shared list and dict defaults leaked state across estimator instances.
+- **[dagster-io/dagster#34070](https://github.com/dagster-io/dagster/pull/34070)** — `open` — raise a clear error when partition-context methods are called on stub assets, instead of an opaque internal failure.
+- **[dagster-io/dagster#34069](https://github.com/dagster-io/dagster/pull/34069)** — `open` — docs fix removing duplicate op names from the `project_mini` example.
+
 ## Tech Stack
 
 <table>
@@ -143,7 +150,6 @@ Big-data procurement analytics pipeline built on a Hadoop and Presto stack, orch
 <img src="https://img.shields.io/badge/Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white">
 <img src="https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white">
 <img src="https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logoColor=white">
-<img src="https://img.shields.io/badge/Dagster-654FF0?style=for-the-badge&logoColor=white">
 <img src="https://img.shields.io/badge/Hadoop-66CCFF?style=for-the-badge&logo=apachehadoop&logoColor=black">
 </td>
 </tr>
@@ -162,7 +168,6 @@ Big-data procurement analytics pipeline built on a Hadoop and Presto stack, orch
 <td>
 <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white">
 <img src="https://img.shields.io/badge/MinIO-C72E49?style=for-the-badge&logo=minio&logoColor=white">
-<img src="https://img.shields.io/badge/Apache%20Iceberg-1E90FF?style=for-the-badge&logoColor=white">
 <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white">
 </td>
 </tr>
@@ -180,7 +185,7 @@ Big-data procurement analytics pipeline built on a Hadoop and Presto stack, orch
 <td>
 <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white">
 <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white">
-<img src="https://img.shields.io/badge/OpenTelemetry-000000?style=for-the-badge&logo=opentelemetry&logoColor=white">
+<img src="https://img.shields.io/badge/Loki-F5A623?style=for-the-badge&logo=grafana&logoColor=white">
 </td>
 </tr>
 </table>
