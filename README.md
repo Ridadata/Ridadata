@@ -1,8 +1,7 @@
 <div align="center">
 
 <img src="./assets/herobaner.png" width="100%" alt="Rida Aderkane — Data Engineering, AI, Systems & Infrastructure"><img src="https://capsule-render.vercel.app/api?type=waving&color=00AEEF&height=100&section=header" width="100%" alt="Cyan wave flowing out of the hero banner">
-
-<h1>RIDA&nbsp;&nbsp;ADERKANE</h1>
+<h1>Rida Aderkane</h1>
 
 <a href="https://github.com/Ridadata">
   <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=00AEEF&center=true&vCenter=true&width=520&height=44&lines=Data+%26+AI+Engineer" alt="Data & AI Engineer">
